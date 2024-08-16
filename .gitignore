@@ -41,3 +41,42 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+key.properties
+app/upload-keystore.jks
+
+# Ignore JavaScript files
+/server/build
+
+# Ignore the node_modules directory
+/server/node_modules/
+
+# Ignore the config.env file
+/server/config.env
+
+#Flutter
+# Flutter/Dart specific
+*.iml
+/.dart_tool/
+**/android/.gradle
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework/
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/flutter_export_environment.sh
+.idea/
+.vscode/
+*.lock
+*.log
+*.zip
+*.tar.gz
+*.apk
+*.ipa
+
+# Generated files
+/build/
+/pods/
+/packages/
+
