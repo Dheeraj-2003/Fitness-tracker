@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:weight_tracker/presentation/screens/subscription_screen.dart';
 import 'package:weight_tracker/presentation/widgets/months_dialog.dart';
 import 'package:weight_tracker/presentation/widgets/user_dialog.dart';
 import 'package:weight_tracker/providers/user/user_provider.dart';
@@ -67,6 +68,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         ),
       ),
       appBar: AppBar(
+        leading: IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (ctx) => const SubsScreen()));
+            },
+            icon: const Icon(Icons.card_membership_rounded)),
         actions: [
           IconButton(
               onPressed: () {
